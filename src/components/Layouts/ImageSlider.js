@@ -35,8 +35,8 @@ class ImageSlider extends Component {
     return (
       <div>
         <SimpleImageSlider
-          width={window.innerWidth}
-          height={504}
+          width={'100%'}
+          height={700}
           images={images}
           useGPURender={this.state.useGPURender}
           showNavs={this.state.showNavs}

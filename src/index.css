@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin: 0px;
@@ -8,14 +8,20 @@ body {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
   width: 100%;
   background-color: #da141e;
-  position: relative;
+  /* top: 0; */
+  position: fixed;
+  z-index: 1;
+  padding: 0.7rem 2rem;
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: flex;
 }
 
 .nav > .nav-header > .nav-title {
@@ -30,7 +36,7 @@ body {
 }
 
 .nav > .nav-links {
-  display: inline;
+  display: flex;
   float: right;
   font-size: 18px;
 }
