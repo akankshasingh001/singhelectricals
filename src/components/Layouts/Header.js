@@ -1,15 +1,11 @@
-import React, { Component, Fragment } from 'react';
-import Navigation from './Navigation';
-import ImageSlider from './ImageSlider';
-import Footer from './Footer';
+import React, { Component } from 'react';
+
 class Header extends Component {
   render() {
     return (
-      <Fragment>
-        <Navigation />
-        <ImageSlider />
-        <Footer />
-      </Fragment>
+      <div>
+        <h1>Singh Electricals</h1>
+      </div>
     );
   }
 }
