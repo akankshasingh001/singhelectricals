@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
   render() {
@@ -6,42 +7,27 @@ class Navigation extends Component {
       <div className="nav">
         <input type="checkbox" id="nav-check" />
         <div className="nav-header">
-          <div className="nav-title">Singh Electricals</div>
+          <div className="nav-title">
+            <div className="nav-links">
+              <Link to="/">Singh Electricals</Link>
+            </div>
+          </div>
         </div>
-        <div className="nav-btn">
-          <label htmlFor="nav-check">
+        <div class="nav-btn">
+          <label for="nav-check">
             <span></span>
             <span></span>
             <span></span>
           </label>
         </div>
-
         <div className="nav-links">
-          <a href="//github.io/jo_geek" target="_blank">
-            About Us
-          </a>
-          <a href="http://stackoverflow.com/users/4084003/" target="_blank">
-            Lighting
-          </a>
-          <a href="https://codepen.io/jo_Geek/" target="_blank">
-            Wires & Cables
-          </a>
-          <a href="https://codepen.io/jo_Geek/" target="_blank">
-            Switches & MCBS
-          </a>
-          <a href="https://codepen.io/jo_Geek/" target="_blank">
-            Other Products
-          </a>
-          <a
-            href="https://in.linkedin.com/in/jonesvinothjoseph"
-            target="_blank"
-          >
-            Fans
-          </a>
-
-          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">
-            Contact Us
-          </a>
+          <Link to="/aboutUs">About Us</Link>
+          <Link to="/lightings"> Lighting</Link>
+          <Link to="/"> Fans</Link>
+          <Link to="/"> Wires & Cables</Link>
+          <Link to="/"> Switches & MCBS</Link>
+          <Link to="/">Other Products</Link>
+          <Link to="/contactUs">Contact Us</Link>
         </div>
       </div>
     );
